@@ -1,0 +1,98 @@
+.footer {
+    background: rgba(240, 218, 233, 0.5);;
+   
+}
+.footer__container {
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.footer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 63px;
+    margin-bottom: 50px;
+}
+.footer__header__logo {
+}
+.footer__header__input {
+    background: $color-white-primary;
+    padding: 23px 250px 23px 40px;
+    border-radius: 33px; 
+    @include text ($font-primary, 400, 16px, 20px, $color-text);
+    border: 0;
+    max-width: 809px;
+    width: 100%;
+}
+.footer__header__inputs {
+    position: relative;
+    max-width: 890px;
+    width: 100%;
+}
+.footer__header__input__btn {
+    position: absolute;
+    top: 5px;
+    right: 88px;
+    
+    @include text ($font-primary, 700, 16px, 20px, $color-white-primary);
+    text-decoration: none;
+    background: $grad-primary;
+    padding: 15px 30px ;
+    border-radius: 33px;
+    transition: .6s ease-in-out;
+    border: 2px solid #ed9b0200;
+    &:hover {
+        background: $color-white-primary;
+        border: 2px solid $color-purple;
+        color: $color-purple;
+    }
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.social__help {
+}
+.social__help__list {
+    list-style: none;
+}
+.social__help__list__a {
+    
+    
+}
+.main-a {
+    @include text ($font-primary, 700, 16px, 20px, $color-primary);
+    text-decoration: none;
+    
+}
+.sec-a {
+    @include text ($font-primary, 400, 16px, 20px, $color-text);
+    text-decoration: none;
+    
+}
+.social__contacts {
+}
+.social__contacts__list {
+    list-style: none;
+}
+.social__contacts__list__a {
+    
+}
+.social__product {
+}
+.social__product__list {
+    list-style: none;
+}
+.social__product__list__a {
+    
+}

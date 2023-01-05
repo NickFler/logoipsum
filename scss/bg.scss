@@ -1,0 +1,66 @@
+.bg {
+    background: $grad-primary;
+    margin-bottom: 150px;
+}
+
+.bg__container {
+    display: flex;
+    flex-direction: column;
+}
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.main-info__title {
+    @include text ($font-add, 700, 60px, 68px, $color-white-primary);
+    margin-bottom: 20px;
+    
+}
+.main-info__desc {
+    @include text ($font-primary, 400, 20px, 30px, $color-white-primary);
+    margin-bottom: 100px;
+    max-width: 560px;
+}
+.carousel {
+    margin-bottom: 120px;
+    display: flex;
+}
+.owl-theme {
+}
+.item {
+    max-width: 728px;
+   display: flex;
+   flex-direction: column;
+   background: rgba(76, 0, 112, 0.195968);
+border-radius: 20px;
+padding: 50px 40px 50px 40px;
+}
+.item__desc {
+    @include text ($font-primary, 400, 20px, 30px, $color-white-primary);
+    margin-bottom: 100px;
+    max-width: 560px;
+}
+.item__avatar {
+    display: flex;
+    gap: 20px;
+}
+.avatar__text {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.avatar__img {
+}
+.avatar__name {
+    @include text ($font-primary, 700, 16px, 20px, $color-white-primary);
+    
+   margin-bottom: 5px;
+}
+.avatar__job {
+    @include text ($font-primary, 400, 16px, 20px, $color-white-primary);
+    
+}

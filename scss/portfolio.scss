@@ -1,0 +1,41 @@
+.portfolio {
+    margin-bottom: 96px;
+}
+
+.portfolio__container {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.portfolio__info {
+    max-width: 570px;
+    width: 100%;
+}
+.info__desc {
+    max-width: 537px;
+}
+.item-desc {
+    max-width: 560px;
+}
+.portfolio__img {
+    position: relative;
+    
+}
+.portfolio-img {
+    
+}
+.portfolio__img__cover-1 {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.portfolio__img__cover-2 {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    bottom: -23px;
+}

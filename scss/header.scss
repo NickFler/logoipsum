@@ -1,0 +1,140 @@
+
+.header {
+    margin-bottom: 41px;
+    &__burger {
+        display: none;
+        @include desktop-small {
+            display: block;
+
+        }
+    }
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 0;
+    gap: 50px;
+   
+}
+.header__logo {
+    
+    transition: .3s ease-in-out;
+    &:hover {
+transform: scale(1.5);
+
+    }
+}
+
+
+.header__nav {
+    flex-grow: 1;
+    
+    @include desktop-small {
+        transition: .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(83, 103, 214, 0.781);
+        transform: translateX(-150%);
+        z-index: 11;
+        
+        &._active {
+            transform: translateX(0);
+
+        }
+        
+    }
+    .icon-close {
+        display: none;
+        @include desktop-small {
+            display: block;
+            position: absolute;
+            top: 38px;
+            right: 21px;
+        }
+    }
+}
+.header__ul {
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    @include desktop-small {
+       
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 50px;
+    }
+    
+}
+.header__li {
+    list-style: none;
+    
+}
+
+.header__primary-buttons {
+    display: flex;
+    gap: 51px;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 50px; 
+    align-items: center;
+}
+.header__link {
+    @include text ($font-primary, 700, 16px, 20px, $color-primary);
+    text-decoration: none;
+}
+.header__btn {
+    @include text ($font-primary, 700, 16px, 20px, $color-white-primary);
+    background: $grad-primary;
+    padding: 15px 30px ;
+    border-radius: 33px;
+    text-decoration: none;
+    transition: .6s ease-in-out;
+    border: 2px solid #ed9b0200;
+    &:hover {
+        background: $color-white-primary;
+        border: 2px solid $color-purple;
+        color: $color-purple;
+    }
+    @include desktop-small {
+        &:hover {
+            background: rgba(83, 103, 214, 0.781);
+        border: 2px solid $color-white-primary;
+        color: $color-white-primary;
+        }
+    }
+}
+
+
+
+
+.header__a {
+    @include text ($font-primary, 700, 16px, 20px, $color-primary);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    &:hover {
+        color: $color-purple;
+        
+    }
+    @include desktop-small {
+        color: $color-white-primary;
+        font-size: 25px;
+        &:hover {
+            color: $color-purple;
+        }
+    }
+}
+.menu {
+    color: $color-primary;
+}

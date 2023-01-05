@@ -1,0 +1,80 @@
+.lesson {
+    margin-bottom: 168px;
+}
+.lesson__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 61px;
+    align-items: center;
+   
+}
+.lesson__list {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.list__block {
+    justify-content: space-between;
+    padding: 46px 54px;
+    background: rgba(240, 218, 233, 0.5);
+mix-blend-mode: normal;
+border-radius: 21px;
+display: flex;
+align-items: center;
+@include mobile {
+    display: flex;
+    flex-direction: column;
+}
+}
+.list__block__info {
+    display: flex;
+    flex-direction: column;
+}
+.list__block__logo {
+
+position: relative;
+}
+
+.logo__cover {
+    position: absolute;
+    top: 24px;
+    left: 26px;
+}
+.list__block__title {
+    @include text ($font-add, 700, 24px, 24px, $color-primary);
+    margin-bottom: 20px;
+}
+.list__block__desc {
+    @include text ($font-primary, 400, 16px, 24px, $color-text);
+    max-width: 501px;
+}
+
+.info-add {
+    align-items: center;
+    max-width: 278px;
+    gap: 32px;
+    display: flex;
+    position: relative;
+    @include text ($font-primary, 600, 16px, 20px, $color-white-primary);
+    background: $grad-primary;
+    padding: 23px 34px 23px 38px ;
+    border-radius: 33px;
+   
+
+}
+.add {
+    max-width: 76px;
+}
+.info-span {
+    &::after {
+        content: '';
+        position: absolute;
+left: 50%;
+right: 49.64%;
+top: 27.27%;
+bottom: 27.27%;
+
+background: #8639B5;
+    }
+}

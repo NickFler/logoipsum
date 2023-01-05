@@ -1,0 +1,16 @@
+html, body {
+    font-family: $font-primary;
+    
+}
+html {
+    &._overFlow {
+      overflow: hidden;  
+    }
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}

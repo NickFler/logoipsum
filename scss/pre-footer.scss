@@ -1,0 +1,49 @@
+.pre-footer {
+    position: relative;
+    margin-bottom: 120px;
+}
+.container {
+}
+.pre-footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pre-footer__logo {
+    @include text ($font-add, 700, 12px, 15px, $color-purple);
+    background: linear-gradient(90deg, #FFD7A9 0%, #FFAE70 100%);
+    padding: 8px 34px 7px 34px;
+    margin-bottom: 50px;
+    border-radius: 33px;
+}
+.pre-footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info__title {
+}
+.info__btn {
+}
+.pre-footer__title{
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+.pre-foter__btn {
+max-width: 214px;
+}
+.pre-footer__img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.pre-footer__img__main {
+}
+.pre-footer__img__cover {
+    position: absolute;
+    top: -23px;
+    right: 16px;
+}

@@ -1,0 +1,59 @@
+.qst {
+    margin-bottom: 120px ;
+}
+.qst__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.qst__main__title {
+    
+    @include text ($font-add, 700, 60px, 68px, $color-primary);
+    
+}
+.qst__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.qst__items {
+    padding: 40px;
+    border: 1px solid $color-purple;
+    border-radius: 21px;
+display: flex;
+flex-direction: column;
+    &._active {
+        .qst__body {
+            display: block;
+        }
+        .qst__arrow {
+            display: none;
+        }
+        .qst__arrow-d {
+            display: block;
+        }
+    }
+}
+.qst__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+.qst__title {
+    @include text ($font-add, 700, 20px, 24px, $color-primary);
+}
+.qst__arrow {
+}
+.qst__arrow-d {
+    display: none;
+}
+.qst__body {
+    display: none;
+}
+.qst__desc {
+    max-width: 667px;
+    @include text ($font-primary, 400, 16px, 26px, $color-primary);
+}

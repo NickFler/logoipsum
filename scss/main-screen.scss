@@ -1,0 +1,106 @@
+.main-screen {
+    display: flex;
+    padding: 134px 0 94px 0;
+    align-items: center;
+}
+.main-screen__container {
+  
+}
+.main-screen__info {
+
+   margin-bottom: 100px;
+   display: flex;
+   justify-content: space-between;
+   @include desktop-small {
+    display: flex;
+    justify-content: none;
+    flex-direction: column-reverse;
+   }
+}
+.info__main{
+    position: relative;
+   
+}
+.info__title {
+    @include text ($font-add, 700, 60px, 68px, $color-primary);
+    margin-bottom: 20px;
+    max-width: 537px
+}
+.info__desc {
+    @include text ($font-primary, 400, 20px, 30px, $color-text);
+    margin-bottom: 40px;
+    max-width: 560px;
+}
+.info__btn {
+    @include text ($font-primary, 700, 20px, 25px, $color-white-primary);
+    background: $grad-primary;
+    padding: 15px 30px ;
+    border-radius: 33px;
+    text-decoration: none;
+    margin-bottom: 100px;
+    max-width: 109px;
+    transition: .6s ease-in-out;
+    border: 2px solid #ed9b0200;
+    &:hover {
+        background: $color-white-primary;
+        border: 2px solid $color-purple;
+        color: $color-purple;
+    }
+}
+.main-screen__followers {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.followers__img-list {
+    display: flex;
+}
+.followers__img {
+    margin-left: -20px ;
+   
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.followers__desc {
+    @include text ($font-primary, 400, 16px, 20px, $color-text);
+
+    .span-primary {
+color: $color-purple;
+    }
+}
+.main-screen__video-main {
+    position: absolute;
+    right: 0;
+    @include desktop-small {
+        display: none;
+    }
+}
+.main-screen__video-secondary {
+    display: none;
+    @include desktop-small {
+        position: relative;
+        display: block;
+        
+    img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+        
+    }
+    }
+}
+.cover {
+    cursor: pointer;
+    top: 145px;
+    right: 260px;
+    z-index: 9;
+    position: absolute;
+    @include desktop-small {
+        object-fit: cover;
+    max-width: 100%;
+    height: auto;
+        top: 147px;
+        left: 285px;
+    }
+}
